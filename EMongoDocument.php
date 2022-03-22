@@ -1339,4 +1339,9 @@ abstract class EMongoDocument extends EMongoEmbeddedDocument
 
 		return $criteria;
 	}
+
+    protected function getMongoDBComponentName()
+    {
+        return 'mongodb';
+    }
 }
