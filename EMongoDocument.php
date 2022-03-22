@@ -631,6 +631,9 @@ abstract class EMongoDocument extends EMongoEmbeddedDocument
 	 * Updates the row represented by this active record.
 	 * All loaded attributes will be saved to the database.
 	 * Note, validation is not performed in this method. You may call {@link validate} to perform the validation.
+     *
+     * We implemented version numbering for each document in the database to support transaction-style write operations. In updateAll() method, this feature has not been implemented.
+     *
 	 * @param array $attributes list of attributes that need to be saved. Defaults to null,
 	 * meaning all attributes that are loaded from DB will be saved.
 	 * @param boolean modify if set true only selected attributes will be replaced, and not
@@ -657,11 +660,21 @@ abstract class EMongoDocument extends EMongoEmbeddedDocument
 
 				foreach($rawData as $key=>$value)
 				{
+                    // this part was added to support versioning
+                    if ($key == "versionNumber")
+                        continue;
+
 					if(!in_array($key, $attributes))
 						unset($rawData[$key]);
 				}
 			}
 
+            // this part was added to support versioning
+            $rawData["versionNumber"]++;
+
+			/*
+			 * This part is commented out because versionNumber changes always.
+			 *
 			if($modify)
 			{
 				if(isset($rawData['_id']) === true)
@@ -691,6 +704,29 @@ abstract class EMongoDocument extends EMongoEmbeddedDocument
 
 				return true;
 			}
+            */
+
+			// this part was copy-pasted from the commented out block above
+            if(isset($rawData['_id']) === true)
+                unset($rawData['_id']);
+            $result = $this->getCollection()->update(
+                array('_id' => $this->_id),
+                array('$set' => $rawData),
+                array(
+                    'fsync'=>$this->getFsyncFlag(),
+                    'safe'=>$this->getSafeFlag(),
+                    'multiple'=>false
+                )
+            );
+
+            // this part was added to support versioning
+            if ($result["n"] != 1) {
+                $this->addError("_id", Yii::t('app', 'Failed to update the document in the database. Probably it was modified by another system user or process. Please, try again.'));
+                return false;
+            } else {
+                $this->afterSave();
+                return true;
+            }
 
 			throw new CException(Yii::t('yii', 'Can\t save document to disk, or try to save empty document!'));
 		}
