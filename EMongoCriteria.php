@@ -292,7 +292,7 @@ class EMongoCriteria extends CComponent
 	 */
 	public function getOffset()
 	{
-		return $this->_offset;
+        return $this->_offset >= 0 ? $this->_offset : 0;
 	}
 
 	/**
