@@ -1356,7 +1356,7 @@ abstract class EMongoDocument extends EMongoEmbeddedDocument
 	/**
 	 * @since v1.2.2
 	 */
-	private function createPkCriteria($pk, $multiple=false)
+	protected function createPkCriteria($pk, $multiple=false)
 	{
 		$pkField = $this->primaryKey();
 		$criteria = new EMongoCriteria();
