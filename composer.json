@@ -10,8 +10,8 @@
     }
   ],
   "require": {
-    "php": "^8.1",
-    "canni/yiimongodbsuite": "dev-master",
+    "php": "8.1.*",
+    "canni/yiimongodbsuite": "dev-master"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest"
