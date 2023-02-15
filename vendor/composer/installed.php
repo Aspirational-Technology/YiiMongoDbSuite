@@ -3,7 +3,7 @@
         'name' => 'aspirational-technology/yiimongodbsuite',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '1c129f33618a90ad5eec490ccda21c13d8a973c6',
+        'reference' => '0af3ceef8c58ad5269a846defacbc10c253c1dda',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'aspirational-technology/yiimongodbsuite' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '1c129f33618a90ad5eec490ccda21c13d8a973c6',
+            'reference' => '0af3ceef8c58ad5269a846defacbc10c253c1dda',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -22,7 +22,7 @@
         'roave/security-advisories' => array(
             'pretty_version' => 'dev-latest',
             'version' => 'dev-latest',
-            'reference' => '3fbc4a9b1f80b5306511cfe666920ca62b8357b9',
+            'reference' => 'bc35b8e9853346249e3adec090d33c6041fb2df4',
             'type' => 'metapackage',
             'install_path' => NULL,
             'aliases' => array(
