@@ -10,8 +10,7 @@
     }
   ],
   "require": {
-    "php": "8.1.*",
-    "canni/yii-mongo-db-suite": "dev-master"
+    "php": "^8.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest"
@@ -26,7 +25,7 @@
     },
     {
     "type": "vcs",
-    "url": "https://github.com/canni/yiimongodbsuite",
+    "url": "https://github.com/aspirational-technology/yiimongodbsuite",
     "no-api": true
     },
     {
