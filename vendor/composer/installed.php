@@ -3,7 +3,7 @@
         'name' => 'aspirational-technology/yiimongodbsuite',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '1cc525eb02c0380aab3a7ee129f2e384ee52ce2d',
+        'reference' => 'c958a74d3b58415a9782e3cd01e363b48425f973',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'aspirational-technology/yiimongodbsuite' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '1cc525eb02c0380aab3a7ee129f2e384ee52ce2d',
+            'reference' => 'c958a74d3b58415a9782e3cd01e363b48425f973',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
