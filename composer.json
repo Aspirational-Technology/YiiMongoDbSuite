@@ -10,7 +10,7 @@
     }
   ],
   "require": {
-    "php": "^8.0"
+    "php": ">=8.1.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest"
@@ -19,14 +19,15 @@
     "platform": {
     }
   },
-  "repositories": [ {
+  "repositories": [
+    {
       "type": "composer",
       "url": "https://asset-packagist.org"
     },
     {
-    "type": "vcs",
-    "url": "https://github.com/aspirational-technology/yiimongodbsuite",
-    "no-api": true
+      "type": "vcs",
+      "url": "https://github.com/aspirational-technology/yiimongodbsuite",
+      "no-api": true
     },
     {
       "type": "package",
