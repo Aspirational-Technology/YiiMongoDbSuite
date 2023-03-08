@@ -10,32 +10,33 @@
     }
   ],
   "require": {
-    "php": "8.1.*",
-    "canni/yii-mongo-db-suite": "dev-master"
+    "php": "^8.1.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest"
   },
   "config": {
     "platform": {
+      "php": "8.1.15"
     }
   },
-  "repositories": [ {
+  "repositories": [
+    {
       "type": "composer",
       "url": "https://asset-packagist.org"
     },
     {
     "type": "vcs",
-    "url": "https://github.com/canni/yiimongodbsuite",
+    "url": "https://github.com/aspirational-technology/yiimongodbsuite",
     "no-api": true
     },
     {
       "type": "package",
       "package": {
-        "name": "canni/yii-mongo-db-suite",
+        "name": "aspirational-technology/yiimongodbsuite",
         "version": "master",
         "source": {
-          "url": "https://github.com/canni/yii-mongo-db-suite",
+          "url": "https://github.com/aspirational-technology/yiimongodbsuite",
           "type": "git",
           "reference": "master",
           "no-api": true
