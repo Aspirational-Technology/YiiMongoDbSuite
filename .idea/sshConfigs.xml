@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="bitbucket.org" id="19c83008-f5c5-49c8-8d34-609f313b0f6c" keyPath="$USER_HOME$/.ssh/id_rsa" port="22" nameFormat="DESCRIPTIVE" username="worldtravelerr" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>
