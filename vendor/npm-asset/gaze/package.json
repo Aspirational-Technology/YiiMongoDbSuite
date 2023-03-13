@@ -1,0 +1,65 @@
+{
+  "name": "gaze",
+  "description": "A globbing fs.watch wrapper built from the best parts of other fine watch libs.",
+  "version": "0.6.3",
+  "homepage": "https://github.com/shama/gaze",
+  "author": {
+    "name": "Kyle Robinson Young",
+    "email": "kyle@dontkry.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shama/gaze.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shama/gaze/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/shama/gaze/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit -v",
+    "install": "node-gyp rebuild"
+  },
+  "dependencies": {
+    "globule": "~0.2.0",
+    "nextback": "~0.1.0",
+    "bindings": "~1.2.0",
+    "nan": "~0.8.0",
+    "absolute-path": "0.0.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-nodeunit": "~0.3.3",
+    "grunt-contrib-jshint": "~0.9.2",
+    "grunt-cli": "~0.1.13",
+    "async": "~0.2.10",
+    "rimraf": "~2.2.6",
+    "ascii-table": "0.0.4"
+  },
+  "keywords": [
+    "watch",
+    "watcher",
+    "watching",
+    "fs.watch",
+    "fswatcher",
+    "fs",
+    "glob",
+    "utility"
+  ],
+  "files": [
+    "index.js",
+    "lib",
+    "src",
+    "binding.gyp",
+    "AUTHORS",
+    "LICENSE-MIT"
+  ]
+}
