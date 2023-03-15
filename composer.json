@@ -17,11 +17,22 @@
     "roave/security-advisories": "dev-latest",
     "phpunit/phpunit": "*",
     "npm-asset/gulp": "*",
+    "npm-asset/yo": "*",
+    "npm-asset/gulp-util": "*",
+    "npm-asset/generator-webapp": "4.0.0-patch8",
+    "npm-asset/yeoman-generator": "*",
+    "npm-asset/generator-mocha": "*",
+    "npm-asset/glob-watcher": "*",
     "npm-asset/findup-sync": "*",
     "npm-asset/liftoff": "*",
-    "npm-asset/glob-watcher": "*",
+    "npm-asset/glob-stream": "*",
+    "npm-asset/glob-parent": "*",
+    "npm-asset/is-glob": "*",
     "npm-asset/chokidar": "*",
-    "npm-asset/is-glob": "*"
+    "npm-asset/vinyl-fs": "*",
+    "npm-asset/isobject": "*",
+    "npm-asset/lodash": "*",
+    "npm-asset/minimatch": "*"
   },
   "config": {
     "platform": {

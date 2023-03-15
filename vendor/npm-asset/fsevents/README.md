@@ -1,83 +1,74 @@
-# fsevents [![NPM](https://nodei.co/npm/fsevents.png)](https://nodei.co/npm/fsevents/)
+# FSEvents [![NPM](https://nodei.co/npm/fsevents.png)](https://nodei.co/npm/fsevents/)
+## Native Access to Mac OS-X FSEvents
 
-Native access to MacOS FSEvents in [Node.js](https://nodejs.org/)
-
-The FSEvents API in MacOS allows applications to register for notifications of
-changes to a given directory tree. It is a very fast and lightweight alternative
-to kqueue.
-
-This is a low-level library. For a cross-platform file watching module that
-uses fsevents, check out [Chokidar](https://github.com/paulmillr/chokidar).
+ * [Node.js](http://nodejs.org/)
+ * [Github repo](https://github.com/pipobscure/fsevents.git)
+ * [Module Site](https://github.com/pipobscure/fsevents)
+ * [NPM Page](https://npmjs.org/package/fsevents)
 
 ## Installation
 
-Supports only **Node.js v8.16 and higher**.
+	$ npm install -g node-gyp
+	$	git clone https://github.com/pipobscure/fsevents.git fsevents
+	$ cd fsevents
+	$ node-gyp configure build
 
-```sh
-npm install fsevents
-```
+OR SIMPLY
+
+	$ npm install fsevents
 
 ## Usage
 
-```js
-const fsevents = require('fsevents');
-const stop = fsevents.watch(__dirname, (path, flags, id) => {
-  const info = fsevents.getInfo(path, flags, id);
-}); // To start observation
-stop(); // To end observation
-```
+    var fsevents = require('fsevents');
+    var watcher = fsevents(__dirname);
+    watcher.on('fsevent', function(path, flags, id) { }); // RAW Event as emitted by OS-X
+    watcher.on('change', function(path, info) {}); // Common Event for all changes
+    // To end observation
 
-The callback passed as the second parameter to `.watch` get's called whenever the operating system detects a
-a change in the file system. It takes three arguments:
+### Events
 
-###### `fsevents.watch(dirname: string, (path: string, flags: number, id: string) => void): () => Promise<undefined>`
+ * *fsevent* - RAW Event as emitted by OS-X
+ * *change* - Common Event for all changes
+ * *created* - A File-System-Item has been created
+ * *deleted* - A File-System-Item has been deleted
+ * *modified* - A File-System-Item has been modified
+ * *moved-out* - A File-System-Item has been moved away from this location
+ * *moved-in* - A File-System-Item has been moved into this location
 
- * `path: string` - the item in the filesystem that have been changed
- * `flags: number` - a numeric value describing what the change was
- * `id: string` - an unique-id identifying this specific event
+All events except *fsevent* take an *info* object as the second parameter of the callback. The structure of this object is:
 
- Returns closer callback which when called returns a Promise resolving when the watcher process has been shut down.
+    {
+      "event": "<event-type>",
+      "id": <eventi-id>,
+      "path": "<path-that-this-is-about>",
+      "type": "<file|directory|symlink>",
+      "changes": {
+        "inode": true, // Has the iNode Meta-Information changed
+        "finder": false, // Has the Finder Meta-Data changed
+        "access": false, // Have the access permissions changed
+        "xattrs": false // Have the xAttributes changed
+      },
+      "flags": <raw-flags>
+    }
 
-###### `fsevents.getInfo(path: string, flags: number, id: string): FsEventInfo`
+## MIT License
 
-The `getInfo` function takes the `path`, `flags` and `id` arguments and converts those parameters into a structure
-that is easier to digest to determine what the change was.
+Copyright (C) 2010-2014 Philipp Dunkel
 
-The `FsEventsInfo` has the following shape:
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-```js
-/**
- * @typedef {'created'|'modified'|'deleted'|'moved'|'root-changed'|'cloned'|'unknown'} FsEventsEvent
- * @typedef {'file'|'directory'|'symlink'} FsEventsType
- */
-{
-  "event": "created", // {FsEventsEvent}
-  "path": "file.txt",
-  "type": "file",    // {FsEventsType}
-  "changes": {
-    "inode": true,   // Had iNode Meta-Information changed
-    "finder": false, // Had Finder Meta-Data changed
-    "access": false, // Had access permissions changed
-    "xattrs": false  // Had xAttributes changed
-  },
-  "flags": 0x100000000
-}
-```
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
 
-## Changelog
-
-- v2.3 supports Apple Silicon ARM CPUs
-- v2 supports node 8.16+ and reduces package size massively
-- v1.2.8 supports node 6+
-- v1.2.7 supports node 4+
-
-## Troubleshooting
-
-- I'm getting `EBADPLATFORM` `Unsupported platform for fsevents` error.
-- It's fine, nothing is broken. fsevents is macos-only. Other platforms are skipped. If you want to hide this warning, report a bug to NPM bugtracker asking them to hide ebadplatform warnings by default.
-
-## License
-
-The MIT License Copyright (C) 2010-2020 by Philipp Dunkel, Ben Noordhuis, Elan Shankar, Paul Miller — see LICENSE file.
-
-Visit our [GitHub page](https://github.com/fsevents/fsevents) and [NPM Page](https://npmjs.org/package/fsevents)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

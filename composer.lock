@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b5b69db4d0d742dee877a119a907566d",
+    "content-hash": "e3300e2e4dc11d4ec7389f7e179c8421",
     "packages": [],
     "packages-dev": [
         {
@@ -147,22 +147,6 @@
             ]
         },
         {
-            "name": "npm-asset/anymatch",
-            "version": "3.1.3",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/anymatch/-/anymatch-3.1.3.tgz"
-            },
-            "require": {
-                "npm-asset/normalize-path": ">=3.0.0,<4.0.0",
-                "npm-asset/picomatch": ">=2.0.4,<3.0.0"
-            },
-            "type": "npm-asset",
-            "license": [
-                "ISC"
-            ]
-        },
-        {
             "name": "npm-asset/archy",
             "version": "0.0.2",
             "dist": {
@@ -175,38 +159,11 @@
             ]
         },
         {
-            "name": "npm-asset/binary-extensions",
-            "version": "2.2.0",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz"
-            },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
             "name": "npm-asset/bindings",
             "version": "1.2.1",
             "dist": {
                 "type": "tar",
                 "url": "https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz"
-            },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
-            "name": "npm-asset/braces",
-            "version": "3.0.2",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/braces/-/braces-3.0.2.tgz"
-            },
-            "require": {
-                "npm-asset/fill-range": ">=7.0.1,<8.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -232,25 +189,16 @@
         },
         {
             "name": "npm-asset/chokidar",
-            "version": "3.5.3",
+            "version": "0.8.3",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/chokidar/-/chokidar-3.5.3.tgz"
+                "url": "https://registry.npmjs.org/chokidar/-/chokidar-0.8.3.tgz"
             },
             "require": {
-                "npm-asset/anymatch": "~3.1.2",
-                "npm-asset/braces": "~3.0.2",
-                "npm-asset/fsevents": "~2.3.2",
-                "npm-asset/glob-parent": "~5.1.2",
-                "npm-asset/is-binary-path": "~2.1.0",
-                "npm-asset/is-glob": "~4.0.1",
-                "npm-asset/normalize-path": "~3.0.0",
-                "npm-asset/readdirp": "~3.6.0"
+                "npm-asset/fsevents": "0.2.0",
+                "npm-asset/recursive-readdir": "0.0.2"
             },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
-            ]
+            "type": "npm-asset"
         },
         {
             "name": "npm-asset/clone-stats",
@@ -331,21 +279,6 @@
             "type": "npm-asset"
         },
         {
-            "name": "npm-asset/fill-range",
-            "version": "7.0.1",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/fill-range/-/fill-range-7.0.1.tgz"
-            },
-            "require": {
-                "npm-asset/to-regex-range": ">=5.0.1,<6.0.0"
-            },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
             "name": "npm-asset/find-index",
             "version": "0.1.1",
             "dist": {
@@ -372,10 +305,13 @@
         },
         {
             "name": "npm-asset/fsevents",
-            "version": "2.3.2",
+            "version": "0.2.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
+                "url": "https://registry.npmjs.org/fsevents/-/fsevents-0.2.0.tgz"
+            },
+            "require": {
+                "npm-asset/nan": "~0.8.0"
             },
             "type": "npm-asset",
             "license": [
@@ -416,13 +352,13 @@
         },
         {
             "name": "npm-asset/glob-parent",
-            "version": "5.1.2",
+            "version": "6.0.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz"
+                "url": "https://registry.npmjs.org/glob-parent/-/glob-parent-6.0.2.tgz"
             },
             "require": {
-                "npm-asset/is-glob": ">=4.0.1,<5.0.0"
+                "npm-asset/is-glob": ">=4.0.3,<5.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -568,21 +504,6 @@
             ]
         },
         {
-            "name": "npm-asset/is-binary-path",
-            "version": "2.1.0",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/is-binary-path/-/is-binary-path-2.1.0.tgz"
-            },
-            "require": {
-                "npm-asset/binary-extensions": ">=2.0.0,<3.0.0"
-            },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
             "name": "npm-asset/is-extglob",
             "version": "2.1.1",
             "dist": {
@@ -610,11 +531,11 @@
             ]
         },
         {
-            "name": "npm-asset/is-number",
-            "version": "7.0.0",
+            "name": "npm-asset/isarray",
+            "version": "0.0.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz"
+                "url": "https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -622,11 +543,11 @@
             ]
         },
         {
-            "name": "npm-asset/isarray",
-            "version": "0.0.1",
+            "name": "npm-asset/isobject",
+            "version": "4.0.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz"
+                "url": "https://registry.npmjs.org/isobject/-/isobject-4.0.0.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -792,18 +713,6 @@
             "type": "npm-asset"
         },
         {
-            "name": "npm-asset/normalize-path",
-            "version": "3.0.0",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz"
-            },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
             "name": "npm-asset/object-keys",
             "version": "0.4.0",
             "dist": {
@@ -860,18 +769,6 @@
             ]
         },
         {
-            "name": "npm-asset/picomatch",
-            "version": "2.3.1",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz"
-            },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
             "name": "npm-asset/pretty-hrtime",
             "version": "0.2.2",
             "dist": {
@@ -899,19 +796,13 @@
             ]
         },
         {
-            "name": "npm-asset/readdirp",
-            "version": "3.6.0",
+            "name": "npm-asset/recursive-readdir",
+            "version": "0.0.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/readdirp/-/readdirp-3.6.0.tgz"
+                "url": "https://registry.npmjs.org/recursive-readdir/-/recursive-readdir-0.0.2.tgz"
             },
-            "require": {
-                "npm-asset/picomatch": ">=2.2.1,<3.0.0"
-            },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
-            ]
+            "type": "npm-asset"
         },
         {
             "name": "npm-asset/resolve",
@@ -1028,21 +919,6 @@
             "dist": {
                 "type": "tar",
                 "url": "https://registry.npmjs.org/tildify/-/tildify-0.2.0.tgz"
-            },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
-            "name": "npm-asset/to-regex-range",
-            "version": "5.0.1",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz"
-            },
-            "require": {
-                "npm-asset/is-number": ">=7.0.0,<8.0.0"
             },
             "type": "npm-asset",
             "license": [
@@ -1545,16 +1421,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.0.15",
+            "version": "10.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "9b0c2245ef173a3d9546f6a4393a85d60eabe071"
+                "reference": "07d386a11ac7094032900f07cada1c8975d16607"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9b0c2245ef173a3d9546f6a4393a85d60eabe071",
-                "reference": "9b0c2245ef173a3d9546f6a4393a85d60eabe071",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/07d386a11ac7094032900f07cada1c8975d16607",
+                "reference": "07d386a11ac7094032900f07cada1c8975d16607",
                 "shasum": ""
             },
             "require": {
@@ -1625,7 +1501,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.0.15"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.0.16"
             },
             "funding": [
                 {
@@ -1641,7 +1517,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-09T06:43:13+00:00"
+            "time": "2023-03-13T09:02:40+00:00"
         },
         {
             "name": "roave/security-advisories",
@@ -1649,12 +1525,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "d20203bb2d1046c1f55bab9585547cfe62b997be"
+                "reference": "b001be05b80bfa38fb266b30ec3108607af6ccd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/d20203bb2d1046c1f55bab9585547cfe62b997be",
-                "reference": "d20203bb2d1046c1f55bab9585547cfe62b997be",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/b001be05b80bfa38fb266b30ec3108607af6ccd6",
+                "reference": "b001be05b80bfa38fb266b30ec3108607af6ccd6",
                 "shasum": ""
             },
             "conflict": {
@@ -1664,7 +1540,7 @@
                 "aheinze/cockpit": "<=2.2.1",
                 "akaunting/akaunting": "<2.1.13",
                 "akeneo/pim-community-dev": "<5.0.119|>=6,<6.0.53",
-                "alextselegidis/easyappointments": "<=1.4.3",
+                "alextselegidis/easyappointments": "<1.5",
                 "alterphp/easyadmin-extension-bundle": ">=1.2,<1.2.11|>=1.3,<1.3.1",
                 "amazing/media2click": ">=1,<1.3.3",
                 "amphp/artax": "<1.0.6|>=2,<2.0.6",
@@ -1716,7 +1592,7 @@
                 "codeception/codeception": "<3.1.3|>=4,<4.1.22",
                 "codeigniter/framework": "<=3.0.6",
                 "codeigniter4/framework": "<4.2.11",
-                "codeigniter4/shield": "= 1.0.0-beta",
+                "codeigniter4/shield": "<1-beta.4|= 1.0.0-beta",
                 "codiad/codiad": "<=2.8.4",
                 "composer/composer": "<1.10.26|>=2-alpha.1,<2.2.12|>=2.3,<2.3.5",
                 "concrete5/concrete5": "<=9.1.3|>= 9.0.0RC1, < 9.1.3",
@@ -1771,11 +1647,11 @@
                 "ezsystems/ezplatform-admin-ui": ">=1.3,<1.3.5|>=1.4,<1.4.6|>=1.5,<1.5.29|>=2.3,<2.3.26",
                 "ezsystems/ezplatform-admin-ui-assets": ">=4,<4.2.1|>=5,<5.0.1|>=5.1,<5.1.1",
                 "ezsystems/ezplatform-graphql": ">=1-rc.1,<1.0.13|>=2-beta.1,<2.3.12",
-                "ezsystems/ezplatform-kernel": "<=1.2.5|>=1.3,<1.3.26",
+                "ezsystems/ezplatform-kernel": "<1.2.5.1|>=1.3,<1.3.26",
                 "ezsystems/ezplatform-rest": ">=1.2,<=1.2.2|>=1.3,<1.3.8",
                 "ezsystems/ezplatform-richtext": ">=2.3,<=2.3.7",
                 "ezsystems/ezplatform-user": ">=1,<1.0.1",
-                "ezsystems/ezpublish-kernel": "<=6.13.8.1|>=7,<7.5.30",
+                "ezsystems/ezpublish-kernel": "<6.13.8.2|>=7,<7.5.30",
                 "ezsystems/ezpublish-legacy": "<=2017.12.7.3|>=2018.6,<=2019.3.5.1",
                 "ezsystems/platform-ui-assets-bundle": ">=4.2,<4.2.3",
                 "ezsystems/repository-forms": ">=2.3,<2.3.2.1|>=2.5,<2.5.15",
@@ -1789,7 +1665,7 @@
                 "firebase/php-jwt": "<6",
                 "fixpunkt/fp-masterquiz": "<2.2.1|>=3,<3.5.2",
                 "fixpunkt/fp-newsletter": "<1.1.1|>=2,<2.1.2|>=2.2,<3.2.6",
-                "flarum/core": "<1.6.3",
+                "flarum/core": "<1.7",
                 "flarum/mentions": "<1.6.3",
                 "flarum/sticky": ">=0.1-beta.14,<=0.1-beta.15",
                 "flarum/tags": "<=0.1-beta.13",
@@ -1981,7 +1857,7 @@
                 "prestashop/blockwishlist": ">=2,<2.1.1",
                 "prestashop/contactform": ">=1.0.1,<4.3",
                 "prestashop/gamification": "<2.3.2",
-                "prestashop/prestashop": "<1.7.8.8",
+                "prestashop/prestashop": "<8.0.1",
                 "prestashop/productcomments": "<5.0.2",
                 "prestashop/ps_emailsubscription": "<2.6.1",
                 "prestashop/ps_facetedsearch": "<3.4.1",
@@ -2234,7 +2110,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-12T20:04:22+00:00"
+            "time": "2023-03-13T21:04:29+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -3200,7 +3076,7 @@
     "stability-flags": {
         "roave/security-advisories": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.1.0"
