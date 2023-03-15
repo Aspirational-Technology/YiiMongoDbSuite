@@ -16,10 +16,10 @@
   "require-dev": {
     "roave/security-advisories": "dev-latest",
     "phpunit/phpunit": "*",
-    "npm-asset/gulp": "*",
+    "npm-asset/gulp": ">=3.6.2",
     "npm-asset/yo": "*",
     "npm-asset/gulp-util": "*",
-    "npm-asset/generator-webapp": "4.0.0-patch8",
+    "npm-asset/generator-webapp": "*",
     "npm-asset/yeoman-generator": "*",
     "npm-asset/generator-mocha": "*",
     "npm-asset/glob-watcher": "*",
