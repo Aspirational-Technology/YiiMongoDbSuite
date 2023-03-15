@@ -11,33 +11,33 @@
     }
   ],
   "require": {
-    "php": ">=8.1.0"
+    "php": ">=8.0.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
     "phpunit/phpunit": "*",
     "npm-asset/gulp": ">=3.6.2",
     "npm-asset/yo": "*",
-    "npm-asset/gulp-util": "*",
-    "npm-asset/generator-webapp": "*",
-    "npm-asset/yeoman-generator": "*",
-    "npm-asset/generator-mocha": "*",
-    "npm-asset/glob-watcher": "*",
-    "npm-asset/findup-sync": "*",
-    "npm-asset/liftoff": "*",
-    "npm-asset/glob-stream": "*",
-    "npm-asset/glob-parent": "*",
-    "npm-asset/is-glob": "*",
-    "npm-asset/chokidar": "*",
-    "npm-asset/vinyl-fs": "*",
-    "npm-asset/isobject": "*",
-    "npm-asset/lodash": "*",
-    "npm-asset/minimatch": "*"
+    "npm-asset/gulp-util": ">=2.2.14",
+    "npm-asset/gulp-cli": "*",
+    "npm-asset/generator-webapp": ">=4.0.0-patch8",
+    "npm-asset/yeoman-generator": ">=4.0.1",
+    "npm-asset/glob-watcher": ">=0.0.5",
+    "npm-asset/findup-sync": ">=0.1.3",
+    "npm-asset/liftoff": ">=0.9.8",
+    "npm-asset/glob-stream": ">=3.1.9",
+    "npm-asset/glob-parent": ">=6.0.2",
+    "npm-asset/is-glob": ">=4.0.3",
+    "npm-asset/chokidar": ">=0.8.3",
+    "npm-asset/vinyl-fs": ">=0.1.3",
+    "npm-asset/isobject": ">=4.0.0",
+    "npm-asset/lodash": ">=2.4.2",
+    "npm-asset/minimatch": ">=0.2.14"
   },
   "config": {
     "platform": {
-      "php": "8.1.16"
-    }
+    },
+    "optimize-autoloader": false
   },
   "repositories": [
     {
