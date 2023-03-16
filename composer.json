@@ -19,7 +19,6 @@
     "npm-asset/gulp": ">=3.6.2",
     "npm-asset/yo": "*",
     "npm-asset/gulp-util": ">=2.2.14",
-    "npm-asset/gulp-cli": "*",
     "npm-asset/generator-webapp": ">=4.0.0-patch8",
     "npm-asset/yeoman-generator": ">=4.0.1",
     "npm-asset/glob-watcher": ">=0.0.5",
