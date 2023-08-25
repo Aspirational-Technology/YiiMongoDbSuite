@@ -21,10 +21,14 @@
   "require-dev": {
     "roave/security-advisories": "dev-latest",
     "phpunit/phpunit": "*",
-    "phing/phing": "dev-main"
+    "phing/phing": "dev-main",
+    "phing/phing-composer-configurator": "dev-master"
   },
   "config": {
     "platform": {
+    },
+    "allow-plugins":{
+      "phing/phing-composer-configurator": true
     },
     "optimize-autoloader": true,
     "sort-packages": true

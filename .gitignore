@@ -6,3 +6,6 @@
 
 # IDE
 composer.lock
+
+# Random
+/.idea/sonarlint

@@ -1142,6 +1142,8 @@ return array(
     'Phing\\Parser\\TargetHandler' => $vendorDir . '/phing/phing/src/Phing/Parser/TargetHandler.php',
     'Phing\\Parser\\XmlContext' => $vendorDir . '/phing/phing/src/Phing/Parser/XmlContext.php',
     'Phing\\Phing' => $vendorDir . '/phing/phing/src/Phing/Phing.php',
+    'Phing\\PhingComposerConfigurator\\ExtensionInstaller' => $vendorDir . '/phing/phing-composer-configurator/src/ExtensionInstaller.php',
+    'Phing\\PhingComposerConfigurator\\ExtensionInstallerPlugin' => $vendorDir . '/phing/phing-composer-configurator/src/ExtensionInstallerPlugin.php',
     'Phing\\Project' => $vendorDir . '/phing/phing/src/Phing/Project.php',
     'Phing\\ProjectComponent' => $vendorDir . '/phing/phing/src/Phing/ProjectComponent.php',
     'Phing\\PropertyHelper' => $vendorDir . '/phing/phing/src/Phing/PropertyHelper.php',

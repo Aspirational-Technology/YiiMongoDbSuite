@@ -3,7 +3,7 @@
         'name' => 'aspirational-technology/yiimongodbsuite',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'a3258689fce7bb194ce2a5c2c6ef111963faf7e3',
+        'reference' => '295b41e42bc2e409e85d3b49332434c52ab857f9',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'aspirational-technology/yiimongodbsuite' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'a3258689fce7bb194ce2a5c2c6ef111963faf7e3',
+            'reference' => '295b41e42bc2e409e85d3b49332434c52ab857f9',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -79,6 +79,17 @@
             'reference' => 'e6702dc66bfe3cbf3b461a7831a79310e3159fa3',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phing/phing',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'dev_requirement' => true,
+        ),
+        'phing/phing-composer-configurator' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '4ae5639bbecc82d849374139895092de528b8803',
+            'type' => 'composer-plugin',
+            'install_path' => __DIR__ . '/../phing/phing-composer-configurator',
             'aliases' => array(
                 0 => '9999999-dev',
             ),
