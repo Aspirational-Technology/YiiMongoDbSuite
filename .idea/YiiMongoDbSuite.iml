@@ -4,8 +4,6 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/vendor/bin" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/myclabs/deep-copy" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nikic/php-parser" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phar-io/manifest" />
@@ -33,6 +31,53 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/version" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/theseer/tokenizer" />
       <excludeFolder url="file://$MODULE_DIR$/.idea/shelf" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/nikic/fast-route" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phing/phing" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpspec/php-diff" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/http-server-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/http-server-middleware" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/aliases" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/arrays" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/cookies" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/data-response" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/definitions" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/files" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/friendly-exception" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/http" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/i18n" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/injector" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/json" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/middleware-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/network-utilities" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/request-model" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/router" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/router-fastroute" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/security" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/session" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/strings" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/translator" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/validator" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii-console" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii-gii" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii-middleware" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

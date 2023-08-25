@@ -11,11 +11,17 @@
     }
   ],
   "require": {
-    "php": "^8.0"
+    "php": "^8.1",
+    "yiisoft/yii-gii": "dev-master",
+    "yiisoft/router-fastroute": "*",
+    "guzzlehttp/psr7": "^1.0",
+    "yiisoft/request-model": "dev-master",
+    "yiisoft/router": "*"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
-    "phpunit/phpunit": "*"
+    "phpunit/phpunit": "*",
+    "phing/phing": "dev-main"
   },
   "config": {
     "platform": {
