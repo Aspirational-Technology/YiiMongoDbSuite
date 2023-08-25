@@ -27,7 +27,7 @@
   "config": {
     "platform": {
     },
-    "allow-plugins":{
+    "allow-plugins": {
       "phing/phing-composer-configurator": true
     },
     "optimize-autoloader": true,
