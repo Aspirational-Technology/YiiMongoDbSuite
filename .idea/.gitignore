@@ -8,3 +8,5 @@
 /dataSources.local.xml
 # CodeStream ignored files
 /../../YiiMongoDbSuite\.idea/codestream.xml
+
+/sonarlint/
